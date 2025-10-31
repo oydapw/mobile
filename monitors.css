@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+}
+
+.header {
+    background-color: #34495e;
+    padding: 1rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #1abc9c;
+}
+
+.main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.monitors-hero {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+}
+
+.monitors-hero h1 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+}
+
+.monitors-hero p {
+    color: #666;
+}
+
+.monitors-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.monitor-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.monitor-card:hover {
+    transform: translateY(-5px);
+}
+
+.monitor-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.monitor-card h2 {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+}
+
+.monitor-card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.monitor-card .product-price {
+    font-size: 1.1rem;
+    color: #1abc9c;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.buy-button {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #16a085;
+}
+
+.features-section {
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 1.3rem;
+    color: #34495e;
+    margin-bottom: 1rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.feature-card {
+    background-color: #ecf0f1;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.feature-card h3 {
+    font-size: 1.1rem;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.advantages-section {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+}
+
+.advantages-section h2 {
+    font-size: 1.3rem;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+}
+
+.advantages-section .advantages-list {
+    list-style: none;
+    text-align: left;
+    margin: 1rem auto;
+    max-width: 600px;
+}
+
+.advantages-section .advantages-list li {
+    color: #34495e;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.advantages-section .advantages-list li::before {
+    content: "•";
+    color: #1abc9c;
+    position: absolute;
+    left: 0;
+}
+
+.advantages-section p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.video-section {
+    text-align: center;
+}
+
+.video-section h2 {
+    font-size: 1.3rem;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+    border-radius: 8px;
+}
+
+.video-container p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.footer {
+    background-color: #34495e;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer .footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.footer .footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer .footer-nav a:hover {
+    color: #1abc9c;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.footer p a {
+    color: #e74c3c;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer p a:hover {
+    color: #2ecc71;
+}
+
+@media (min-width: 769px) {
+    .header {
+        padding: 1.5rem;
+    }
+
+    .nav {
+        gap: 2rem;
+    }
+
+    .nav a {
+        font-size: 1.1rem;
+    }
+
+    .main {
+        padding: 2rem;
+        gap: 3rem;
+    }
+
+    .monitors-hero {
+        padding: 2rem;
+    }
+
+    .monitors-hero h1 {
+        font-size: 2rem;
+    }
+
+    .monitors-hero p {
+        font-size: 1rem;
+    }
+
+    .monitors-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .monitor-card {
+        padding: 1.5rem;
+    }
+
+    .monitor-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .monitor-card p {
+        font-size: 1rem;
+    }
+
+    .monitor-card .product-price {
+        font-size: 1.2rem;
+    }
+
+    .buy-button {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .features-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+
+    .feature-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .feature-card p {
+        font-size: 1rem;
+    }
+
+    .advantages-section {
+        padding: 2rem;
+    }
+
+    .advantages-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .advantages-section .advantages-list li {
+        font-size: 1rem;
+    }
+
+    .advantages-section p {
+        font-size: 1rem;
+    }
+
+    .video-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .video-container {
+        gap: 1rem;
+    }
+
+    .video-container p {
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding: 1.5rem;
+    }
+
+    .footer .footer-nav a {
+        font-size: 1rem;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .main {
+        padding: 1.5rem;
+    }
+
+    .monitors-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .monitors-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .video-container iframe {
+        height: 250px;
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Haven</title>
+    <link rel="stylesheet" href="style-desktop.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#home">Главная</a>
+            <a href="products.html">Продукты</a>
+            <a href="monitors.html">Мониторы</a>
+        </nav>
+    </header>
+
+    <section class="slider-section">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="hx.jpg" alt="HyperX Alloy Elite 2"></div>
+                <div class="swiper-slide"><img src="hx1.jpg" alt="HyperX Alloy Origins Core"></div>
+                <div class="swiper-slide"><img src="hx2.jpg" alt="HyperX Alloy MK2"></div>
+                <div class="swiper-slide"><img src="hx3.jpg" alt="HyperX Alloy FPS Pro"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <main class="main">
+        <section id="home" class="hero-section">
+            <h1>HyperX Alloy Origins – Механическая игровая клавиатура</h1>
+            <p>Оставайтесь в игре, наслаждайтесь каждым нажатием и оптимизируйте производительность с HyperX Alloy Origins. Разработана для идеального баланса стиля, производительности и надежности с кастомными свитчами HyperX, RGB-подсветкой и алюминиевым корпусом.</p>
+            <div class="hero-product">
+                <img src="https://hyperx.com/cdn/shop/files/hyperx_alloy_origins_us_1_top_down_1200x.jpg?v=1730147986" alt="HyperX Alloy Origins">
+                <div class="product-info">
+                    <div class="product-price">455,00 BYN</div>
+                    <div class="product-discount">(-0%)</div>
+                    <button class="buy-button">Купить сейчас</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="promotions-section">
+            <h2>СОЧЕТАЙТЕ ДЛЯ ЭКОНОМИИ!</h2>
+            <p>Скидка 20% на HyperX Alloy Origins с кодом SPOOKY20! Полностью алюминиевый корпус и отсоединяемый USB-C кабель.</p>
+            <button class="buy-button">Купить сейчас</button>
+        </section>
+
+        <section class="new-products-section">
+            <h2>НОВИНКИ</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="core.jpg" alt="HyperX Alloy Elite 2">
+                    <h3>HyperX Alloy Elite 2</h3>
+                    <p>Полноразмерная клавиатура с механическими свитчами HyperX Pudding.</p>
+                    <div class="product-price">525,00 BYN</div>
+                    <button class="order-button">Заказать</button>
+                </div>
+                <div class="product-card">
+                    <img src="core.jpg" alt="HyperX Alloy Origins Core">
+                    <h3>HyperX Alloy Origins Core</h3>
+                    <p>Беспроводная TKL-клавиатура с свитчами HyperX Aqua.</p>
+                    <div class="product-price">490,00 BYN</div>
+                    <button class="order-button">Заказать</button>
+                </div>
+                <div class="product-card">
+                    <img src="MK.jpg" alt="HyperX Alloy Origins Core">
+                    <h3>HyperX Alloy MK2</h3>
+                    <p>Механическая клавиатура с линейными свитчами.</p>
+                    <div class="product-price">420,00 BYN</div>
+                    <button class="order-button">Заказать</button>
+                </div>
+                <div class="product-card">
+                    <img src="Z.jpg" alt="HyperX Alloy Origins Core">
+                    <h3>HyperX Alloy FPS Pro</h3>
+                    <p>Компактная FPS-ориентированная клавиатура.</p>
+                    <div class="product-price">385,00 BYN</div>
+                    <button class="order-button">Заказать</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-nav">
+            <a href="#home">Главная</a>
+            <a href="products.html">Продукты</a>
+            <a href="contacts.html">Контакты</a>
+        </div>
+        <p>Контактная информация: <a href="mailto:info@keyboardhaven.com">info@keyboardhaven.com</a> | +375 (33) 388 87 30</p>
+        <p>© 2025 Keyboard Haven. Все права защищены. HyperX Alloy Origins – официальный продукт HyperX.</p>
+        <p>* Для получения кода промо SPOOKY20, введите его при оплате для 20% скидки. Исключения: HyperX Cloud II, HyperX Cloud III. Действует до 31/10/2025.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            watchOverflow: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                769: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    </script>
+</body>
+</html>
